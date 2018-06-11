@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HOME-CUSTOM News</title>
+
+		<style type="text/css">
+			
+		#topbar{
+
+			width: 1200px;
+		    height: 50px;
+		    margin:0 auto;
+		
+		}
+
+		body{
+
+			margin: 0;
+			padding: 0;
+			font-family: Helvetica,Arial,sans-serif;
+		
+		}
+
+		#news-logo{
+
+			margin: 0 auto;
+			width: 94px;
+			float: left;
+			position: relative;
+			right: 20px;
+		
+		}
+
+		.topbar-section{
+
+			float: left;
+			border-left: 1px #cccccc solid;
+			height: 100%;
+		
+		}
+
+		#signin-image{
+
+			margin:11px 15px;
+			width: 25px;
+			float: left;
+		
+		}
+
+		#signin-text{
+
+			font-weight: bold;
+			font-size: 90%;
+			position: relative;
+			top:14px;
+			margin-right: 66px;
+
+		}
+
+		.topbar-menu{
+
+			font-weight: bold;
+			font-size: 80%;
+			padding:14px 15px 0 15px;
+			height: 36px;
+			float: left;
+
+		}
+
+		#arrow{
+			margin-left: 20px;
+		}
+
+		#search-box{
+			background-color: #E4E4E4;
+			border:none;
+			font-weight: bold;
+			font-size: 14px;
+			padding: 5px;
+			margin-top: 9px;
+			margin-left: 6px;
+			float: left;
+
+		}
+
+		#magnifying-glass{
+			margin-top:9px;
+			width:28px;
+			height: 26px;
+		}
+
+		.clear{
+			clear: both;
+		}
+
+		#menu-bar-container{
+			background-color: #345A98;
+			width:100%;
+			height:70px;
+		}
+
+		#menu-bar{
+			width: 1200px;
+			margin:0 auto;
+		}
+
+		h1{
+			padding: 0;
+			margin:0;
+			color: white;
+			font-size: 40px;
+			font-weight: normal;
+			padding-top: 10px;
+		}
+
+		#menu-bar-2-container{
+			background-color: #D70000;
+			width:100%;
+
+		}
+
+		#menu-bar-2{
+			width: 1200px;
+			margin: 0 auto;
+			height:35px;
+		}
+
+		#menu-bar-2 a{
+			color:white;
+			text-decoration: none;
+			padding:0 10px;
+			border-right: 1px solid #BB4545;
+			font-size: 15px;
+			position: relative;
+			top:5px;
+		}
+
+		#white-arrow{
+			float:right;
+			position: relative;
+			bottom: 10px;
+		}
+
+		.no-border{
+			border:none !important; /* this has more priority than anything that is not more important */
+		}
+
+		#menu-bar-2 a:hover{
+			text-decoration: underline;
+		}
+
+		#page-container{
+			width: 1200px;
+			margin:0 auto;
+		}
+
+		h2{
+			font-weight:normal;
+			font-size: 20px;
+		    margin-bottom:5px;
+		    border-bottom: 3px solid #BB4545;
+		    display: table;
+		}
+
+		h1 a{
+			color:black;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		h1 a:hover{
+				color:#0068A8;
+		}
+
+			#article-summary{
+				color:#5a5a5a;
+				width:220px;
+				font-size: .9375rem;
+    			line-height: 1.33334;
+    			float: left;
+			}
+
+			.clock{
+				position: relative;
+				top:3px;
+				right:5px;
+			}
+
+			.topic-link{
+				text-decoration: none;
+				color:#A91717;
+				border-left:1px solid #CCCCCC;
+				padding-left: 6px;
+			}
+
+			#article-summary a:hover{
+				color:#0068A8;
+			}
+
+			.date{
+				padding-right: 5px;
+				color:#5a5a5a;
+			}
+
+			#article-container{
+				float:left;
+				width:700px;
+				border-right:solid 1px #CCCCCC;
+			}
+
+			#main-article-image{
+				width: 400px;
+				margin-left: 20px;
+			}
+
+			#article-hr{
+
+				color:#A91717;
+				width:20%;
+			
+			}
+
+			.article-link{
+
+				color:black;
+				text-decoration: none;
+			
+			}
+
+			#watch-listen{
+				position: relative;
+				left:750px;
+				bottom:300px;
+			}
+
+			h4{
+				font-weight: normal;
+				font-size: 20px;
+			}
+
+			.article-side-image{
+				float:left;
+				width: 90px;
+			}
+
+			.watch-listen-link{
+				text-decoration: none;
+				color:black;
+				font-weight: bold;
+				font-size: 16px;
+				margin-right: 5px;
+
+			}
+
+			.watch-listen-link:hover{
+				color:#0068A8;
+			}
+		
+			.side-article{
+				float:right;
+				width:200px; 
+				position: relative;
+				top:-18px;
+				right: 900px;
+			}
+
+			.no-border{
+				border-left: none;
+
+			}
+
+			.border-right{
+				border-right: 1px solid #CCCCCC
+			}
+
+			.side-article-3{
+				float:right;
+				width:200px; 
+				position: relative;
+				top:-78px;
+				right: 900px;
+			}
+
+			.article-side-image-3{
+				float:left;
+				width: 90px;
+				position: relative;
+				bottom: 34px;
+			}
+
+		
+
+			input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+		</style>
+	
+	</head>
+<body>
+
+
+	<div id="topbar">
+	
+		<img id="news-logo" src="/home/swapneil/Desktop/bbc-images/news.png">
+		
+		<div id="signin-div" class="topbar-section">
+
+			<img id="signin-image" src="/home/swapneil/Desktop/bbc-images/signinlogo.png">
+
+				<span id="signin-text">Sign in</span>
+
+		</div>
+
+		<div class="topbar-section topbar-menu">
+			
+			Home
+
+		</div>
+
+		<div class="topbar-section topbar-menu">
+			
+			News
+
+		</div>
+		<div class="topbar-section topbar-menu">
+			
+			Sport
+
+		</div>
+		<div class="topbar-section topbar-menu">
+			
+			Weather
+
+		</div>
+		<div class="topbar-section topbar-menu">
+			
+			Shop
+
+		</div>
+		<div class="topbar-section topbar-menu">
+			
+			Earth
+
+		</div>
+		<div class="topbar-section topbar-menu">
+			
+			Travel
+
+		</div>
+		<div class="topbar-section topbar-menu">
+			
+			Capital
+
+		</div>
+		<div class="topbar-section topbar-menu">
+			
+			<a href="#register" onclick="document.getElementById('id01').style.display='block'">Register</a>
+
+			<img id="arrow" src="/home/swapneil/Desktop/bbc-images/arrow.png">
+
+		</div>
+
+		<div class="topbar-section">
+			
+			<input id="search-box" type="text" value="search">
+
+			<input type="image" id="magnifying-glass" src="/home/swapneil/Desktop/bbc-images/search.png">
+
+		</div>
+
+	</div>
+
+	<div class="clear"></div>
+	<div id="menu-bar-container">
+		<div id="menu-bar">
+			
+			<h1>NEWS</h1>
+
+		</div>
+	</div>
+
+	<div id="menu-bar-2-container">
+		
+		<div id="menu-bar-2">
+
+			<a href="">Home</a>
+			<a href="">Video</a>
+			<a href="">World</a>
+			<a href="">Asia</a>
+			<a href="">INDIA</a>
+			<a href="">Business</a>
+			<a href="">Tech</a>
+			<a href="">Science</a>
+			<a href="">Magzine</a>
+			<a href="">Entertainment</a>
+			<a href="">Health</a>
+			<a href="">World News TV</a>
+			<a href="">In Pictures</a>
+			<a href="">Reality Check</a>
+			<a class="no-border" href="">More</a>
+			<img id="white-arrow" src="/home/swapneil/Desktop/bbc-images/white-arrow.png">
+
+		</div>
+
+	</div>
+
+
+	<div id="page-container">
+
+		<div id="main-article">
+			
+			<h2>Technology</h2>
+
+			<div id="article-container">
+
+			<h1><a href="http://technewstube.com/slashdot/915276/virtual-zuck-fails-to-connect/">Virtual Zuck fails to connect</a></h1>
+
+			<div id="article-summary">
+				<p>Mark Zuckerberg's virtual reality tour of Puerto Rico has raised eyebrows.</p>
+
+				<p><img src="/home/swapneil/Desktop/bbc-images/clock.png"> <span class="date"> 11 October 2017 </span> <a class="topic-link" href=""> Technology</a> </p>
+
+				<hr id="article-hr" align="left">
+
+				<p><a class="article-link" href="">Facebook confirms Russia ads on Instagram</a></p>
+
+			</div>
+
+			<img id="main-article-image" src="/home/swapneil/Desktop/bbc-images/mark.jpg">
+
+			</div>
+
+
+
+		</div>
+
+		<div class="clear"></div>
+
+		<div id="watch-listen">
+			<h4>   Watch/Listen</h4>
+
+			<img class="article-side-image" src="/home/swapneil/Desktop/bbc-images/video1.png">
+
+			<div class="side-article"><p><a class="watch-listen-link" href="">Apple CEO:Dead heros better than living</a></p>
+
+			<p>
+				<p><img class="clock" src="/home/swapneil/Desktop/bbc-images/clock.png"> <span class="date"> 11 October 2017 </span> </p>
+			</p></div>
+
+			<div class="clear"></div>
+
+			<img class="article-side-image" src="/home/swapneil/Desktop/bbc-images/video2.png">
+
+			<div class="side-article"><p><a class="watch-listen-link" href="">The origami bots that could do surgery</a></p>
+
+			<p>
+				<p><img class="clock" src="/home/swapneil/Desktop/bbc-images/clock.png"> <span class="date border-right"> 11 October 2017 </span ><a class="topic-link no-border" href="">Technology </p>
+			</p></div>
+
+			<div class="clear"></div>
+
+			<img class="article-side-image-3" src="/home/swapneil/Desktop/bbc-images/video3.png">
+
+			<div class="side-article-3"><p><a class="watch-listen-link" href="">Pedestrain crossing reacts to danger</a></p>
+
+			<p>
+				<p><img class="clock" src="/home/swapneil/Desktop/bbc-images/clock.png"> <span class="date border-right"> 11 October 2017 </span ><a class="topic-link no-border" href="">Technology </p>
+			</p></div>
+
+			<div class="clear"></div>
+			
+
+		</div>
+
+	</div>
+
+
+<div id="register">
+		<div id="id01" class="modal">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"><h2>Sign up</h2></span>
+			<form class="modal-content animate" action="/action_page.php">
+			<div class="container">
+				<label><b>Name</b></label>
+				<input type="text" placeholder="Enter Name" name="name" required>
+				<label><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+				<label><b>phone no.</b></label>
+				<input type="text" placeholder="Enter phone number" name="psw" required>
+
+				<label><b>College</b></label>
+				<input type="text" placeholder="Enter college name" name="psw-repeat" required>
+			
+				
+				
+
+				<div class="clearfix">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					<button type="submit" class="signupbtn">Sign Up</button>
+				</div>
+			</div>
+  
+		</div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
